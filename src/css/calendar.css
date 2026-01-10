@@ -118,5 +118,10 @@ span.flatpickr-weekday {
   &.selected {
     background: #4e75ff;
     color: #fff;
+    &:hover,
+    &:focus {
+      background: #4e75ff;
+      border-color: #4e75ff;
+    }
   }
 }

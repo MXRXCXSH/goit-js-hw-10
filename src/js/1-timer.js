@@ -2,6 +2,7 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import '../css/styles.css';
 
 const startBtn = document.querySelector('[data-start]');
 const dateInput = document.querySelector('#datetime-picker');
@@ -10,6 +11,7 @@ const hoursEl = document.querySelector('[data-hours]');
 const minutesEl = document.querySelector('[data-minutes]');
 const secondsEl = document.querySelector('[data-seconds]');
 startBtn.disabled = true;
+startBtn.classList.add('start-btn');
 
 let userSelectedDate = null;
 let timerId = null;
@@ -17,6 +19,20 @@ let timerId = null;
 const options = {
   enableTime: true,
   time_24hr: true,
+  locale: {
+    weekdays: {
+      shorthand: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
+      longhand: [
+        'Monday',
+        'Tuesday',
+        'Wednesdy',
+        'Thursday',
+        'Friday',
+        'Saturday',
+        'Sunday',
+      ],
+    },
+  },
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {

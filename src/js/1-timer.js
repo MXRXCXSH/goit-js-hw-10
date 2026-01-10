@@ -38,7 +38,6 @@ const options = {
     startBtn.disabled = false;
   },
 };
-const fp = flatpickr(dateInput, options);
 
 flatpickr(dateInput, options);
 

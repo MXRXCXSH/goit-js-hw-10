@@ -16,9 +16,6 @@ let timerId = null;
 
 const options = {
   enableTime: true,
-  altInput: true,
-  altFormat: 'F j, Y',
-  dateFormat: 'Y-m-d H:i',
   time_24hr: true,
   defaultDate: new Date(),
   minuteIncrement: 1,
@@ -41,6 +38,7 @@ const options = {
     startBtn.disabled = false;
   },
 };
+const fp = flatpickr(dateInput, options);
 
 flatpickr(dateInput, options);
 

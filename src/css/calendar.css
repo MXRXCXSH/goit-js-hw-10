@@ -3,6 +3,7 @@
   border-radius: 8px;
   margin-top: 8px;
   width: 280px;
+  height: 352px;
   padding: 16px;
 }
 .flatpickr-months {
@@ -12,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 16px auto;
+  margin-bottom: 24px;
 }
 .flatpickr-months .flatpickr-month {
   height: 20px;
@@ -48,9 +49,6 @@
   padding: 0;
   width: 39px;
 }
-.flatpickr-innerContainer {
-  margin-bottom: 16px;
-}
 .flatpickr-weekdays {
   display: flex;
   justify-content: center;
@@ -67,12 +65,14 @@ span.flatpickr-weekday {
   line-height: 1.5;
   text-align: center;
   color: #2e2f42;
-  text-align: center;
+}
+.flatpickr-days {
+  width: 248px;
 }
 .dayContainer {
   display: flex;
   flex-wrap: wrap;
-  width: 248px;
+  min-width: auto;
   justify-content: space-around;
 }
 .flatpickr-day {

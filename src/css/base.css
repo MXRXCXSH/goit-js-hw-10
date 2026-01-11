@@ -19,6 +19,9 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   font-optical-sizing: auto;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 
 body {

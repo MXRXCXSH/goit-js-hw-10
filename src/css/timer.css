@@ -5,8 +5,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
@@ -35,9 +33,7 @@
   color: white;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
   padding: 8px 16px;
-  letter-spacing: 0.04em;
   transition: 200ms ease-in;
   &:hover,
   &:focus {
@@ -65,15 +61,11 @@
   font-weight: 400;
   font-size: 40px;
   line-height: 1.2;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
 }
 
 .label {
   display: block;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
-  color: #2e2f42;
   text-transform: uppercase;
 }

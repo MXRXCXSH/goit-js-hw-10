@@ -47,7 +47,7 @@ const options = {
         message: 'Please choose a date in the future',
         position: 'topRight',
         backgroundColor: '#ef4040',
-        iconUrl: '../img/reject.svg',
+        iconUrl: '/goit-js-hw-10/img/reject.svg',
       });
 
       return;

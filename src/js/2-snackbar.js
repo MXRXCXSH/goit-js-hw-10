@@ -26,13 +26,17 @@ form.addEventListener('submit', event => {
         title: 'OK',
         message: `✅ Fulfilled promise in ${delay}ms`,
         position: 'topRight',
+        backgroundColor: '#59a10d',
+        iconUrl: '../img/resolve.svg',
       });
     })
     .catch(delay => {
       iziToast.error({
-        // title: 'Error',
+        title: 'Error',
         message: `❌ Rejected promise in ${delay}ms`,
         position: 'topRight',
+        backgroundColor: '#ef4040',
+        iconUrl: '../img/reject.svg',
       });
     });
   form.reset();

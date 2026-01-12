@@ -1,6 +1,8 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import '../css/styles.css';
+import resolveIcon from '../img/resolve.svg';
+import rejectIcon from '../img/reject.svg';
 
 const form = document.querySelector('.form');
 
@@ -27,7 +29,7 @@ form.addEventListener('submit', event => {
         message: `✅ Fulfilled promise in ${delay}ms`,
         position: 'topRight',
         backgroundColor: '#59a10d',
-        iconUrl: '/goit-js-hw-10/img/resolve.svg',
+        iconUrl: resolveIcon,
       });
     })
     .catch(delay => {
@@ -36,7 +38,7 @@ form.addEventListener('submit', event => {
         message: `❌ Rejected promise in ${delay}ms`,
         position: 'topRight',
         backgroundColor: '#ef4040',
-        iconUrl: '/goit-js-hw-10/img/reject.svg',
+        iconUrl: rejectIcon,
       });
     });
   form.reset();

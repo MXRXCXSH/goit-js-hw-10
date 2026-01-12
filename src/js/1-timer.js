@@ -3,6 +3,7 @@ import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import '../css/styles.css';
+import rejectIcon from '../img/reject.svg';
 
 const startBtn = document.querySelector('[data-start]');
 const dateInput = document.querySelector('#datetime-picker');
@@ -47,7 +48,7 @@ const options = {
         message: 'Please choose a date in the future',
         position: 'topRight',
         backgroundColor: '#ef4040',
-        iconUrl: '/goit-js-hw-10/img/reject.svg',
+        iconUrl: rejectIcon,
       });
 
       return;

@@ -27,7 +27,7 @@ form.addEventListener('submit', event => {
         message: `✅ Fulfilled promise in ${delay}ms`,
         position: 'topRight',
         backgroundColor: '#59a10d',
-        iconUrl: '../img/resolve.svg',
+        iconUrl: '/goit-js-hw-10/img/resolve.svg',
       });
     })
     .catch(delay => {
@@ -36,7 +36,7 @@ form.addEventListener('submit', event => {
         message: `❌ Rejected promise in ${delay}ms`,
         position: 'topRight',
         backgroundColor: '#ef4040',
-        iconUrl: '../img/reject.svg',
+        iconUrl: '/goit-js-hw-10/img/reject.svg',
       });
     });
   form.reset();
